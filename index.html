@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#513212">
+  <meta name="description" content="Viettrip — Vọng từ đại ngàn, chạm vào tâm an. Hành trình trải nghiệm văn hóa cồng chiêng, Bảo Lộc và Đà Lạt.">
+  <title>Viettrip — Vọng từ đại ngàn, chạm vào tâm an</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet">
+  <link rel="preload" as="image" href="assets/hero.webp" fetchpriority="high">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#gioi-thieu">Đến nội dung chính</a>
+  <div class="progress" aria-hidden="true"><span id="progressFill"></span></div>
+
+  <!-- DESKTOP: CHÍNH XÁC THEO PDF.
+       Ảnh nền tách rời; foreground-vector.svg giữ nguyên chữ vector, nét chữ,
+       hình khung và họa tiết xuất trực tiếp từ file Canva/PDF người dùng cung cấp.
+       Vì vậy desktop không phải đoán lại font/kerning/toạ độ. -->
+  <div class="fidelity-site" id="desktopSite">
+    <main class="fidelity-canvas" aria-label="Viettrip — landing page theo mẫu thiết kế">
+      <section class="photo-scene" id="trang-chu" style="--ratio:1024.5 / 576;--strength:0.17" aria-label="Vọng từ đại ngàn, chạm vào tâm an">
+        <img class="photo photo-static" src="assets/hero.webp" width="1672" height="941" fetchpriority="high" alt="">
+        <img class="photo photo-moving" src="assets/hero.webp" width="1672" height="941" alt="">
+        <nav class="reference-hotspots" aria-label="Điều hướng chính trên ảnh mẫu">
+          <a class="target" style="--l:5%;--t:7.5%;--w:14%;--h:10%" href="#trang-chu" aria-label="Viettrip, về đầu trang"></a>
+          <a class="target" style="--l:25.0%;--t:8%;--w:10.6%;--h:8%" href="#gioi-thieu" aria-label="Giới thiệu"></a>
+          <a class="target" style="--l:37.6%;--t:8%;--w:11.3%;--h:8%" href="#diem-den" aria-label="Điểm đến"></a>
+          <a class="target" style="--l:49.8%;--t:8%;--w:12.4%;--h:8%" href="#hanh-trinh" aria-label="Hành trình"></a>
+          <a class="target" style="--l:63.4%;--t:8%;--w:12.7%;--h:8%" href="#ve-viettrip" aria-label="Về Viettrip"></a>
+          <a class="target" style="--l:77.2%;--t:8%;--w:9%;--h:8%" href="#lien-he" aria-label="Liên hệ"></a>
+        </nav>
+        <a class="target" style="--l:23%;--t:80%;--w:25%;--h:10.5%" href="#hanh-trinh" aria-label="Xem lịch trình ngay"></a>
+        <button class="target" style="--l:49.3%;--t:80%;--w:24.4%;--h:10.5%" type="button" data-contact aria-label="Đăng ký tư vấn"></button>
+      </section>
+      <section class="photo-scene" id="gioi-thieu" style="--ratio:1024.5 / 612;--strength:0.11" aria-label="Hành trình đánh thức mọi giác quan">
+        <img class="photo photo-static" src="assets/culture.webp" width="1023" height="613" loading="lazy" alt="">
+        <img class="photo photo-moving" src="assets/culture.webp" width="1023" height="613" loading="lazy" alt="">
+      </section>
+      <section class="photo-scene" id="diem-den" style="--ratio:1024.5 / 681.75;--strength:0.09" aria-label="Điểm đến Bảo Lộc — Đà Lạt">
+        <img class="photo photo-static" src="assets/destination.webp" width="1200" height="800" loading="lazy" alt="">
+        <img class="photo photo-moving" src="assets/destination.webp" width="1200" height="800" loading="lazy" alt="">
+      </section>
+      <section class="photo-scene" id="hanh-trinh" style="--ratio:1024.5 / 1393.5;--strength:0.10" aria-label="Hành trình trải nghiệm ba chặng">
+        <img class="photo photo-static" src="assets/journey.webp" width="753" height="1024" loading="lazy" alt="">
+        <img class="photo photo-moving" src="assets/journey.webp" width="753" height="1024" loading="lazy" alt="">
+      </section>
+      <section class="photo-scene" id="ve-viettrip" style="--ratio:1024.5 / 684.75;--strength:0.10" aria-label="Về Viettrip">
+        <img class="photo photo-static" src="assets/about.webp" width="800" height="533" loading="lazy" alt="">
+        <img class="photo photo-moving" src="assets/about.webp" width="800" height="533" loading="lazy" alt="">
+        <button class="target" style="--l:31%;--t:79%;--w:37%;--h:13%" type="button" data-contact aria-label="Liên hệ tư vấn tour"></button>
+      </section>
+      <section class="photo-scene" id="lien-he" style="--ratio:1024.5 / 621;--strength:0.08" aria-label="Liên hệ Viettrip">
+        <img class="photo photo-static" src="assets/contact.webp" width="1240" height="754" loading="lazy" alt="">
+        <img class="photo photo-moving" src="assets/contact.webp" width="1240" height="754" loading="lazy" alt="">
+        <a class="target" style="--l:56%;--t:69%;--w:31%;--h:10%" href="mailto:dulichviettravel8@gmail.com" aria-label="Gửi thư tới dulichviettravel8@gmail.com"></a>
+      </section>
+      <!-- Vector lớp nổi; không chứa ảnh nền. Toàn bộ font/chữ đúng tệp PDF gốc. -->
+      <img class="reference-artwork" id="referenceArtwork" src="assets/foreground-vector.svg" alt="" aria-hidden="true" draggable="false">
+      <div class="semantic-copy visually-hidden" aria-label="Nội dung landing page">
+        <h1>Vọng từ đại ngàn — Chạm vào tâm an</h1>
+        <h2>Hành Trình Đánh Thức Mọi Giác Quan</h2>
+        <p>Khám phá cao nguyên. Trải nghiệm đời sống. Âm thanh cồng chiêng.</p>
+        <h2>Bảo Lộc - Đà Lạt, Lâm Đồng</h2>
+        <p>Hai thành phố cao nguyên với khí hậu tuyệt vời, nơi lưu giữ những giá trị văn hóa lâu đời kết hợp cùng khung cảnh thiên nhiên thơ mộng, mang đến trải nghiệm du lịch đáng nhớ nhất năm.</p>
+        <h2>Hành Trình Trải Nghiệm</h2>
+        <p>1. Khởi Hành — TP. Hồ Chí Minh tới Bảo Lộc. 2. Giao lưu và tìm hiểu Đà Lạt. 3. Đêm trải nghiệm cồng chiêng.</p>
+        <h2>Đồng Hành Cùng Những Chuyến Đi Đích Thực</h2>
+        <p>Viettrip là doanh nghiệp hoạt động trong lĩnh vực du lịch và lữ hành, chuyên cung cấp các chương trình du lịch trong nước và quốc tế chất lượng cao.</p>
+        <h2>Liên hệ</h2>
+        <p>Thứ 2 đến Thứ 7: 9:00 đến 19:00. Địa chỉ: 68 Lê Lai, P. Bến Thành, Thành phố HCM. Email: dulichviettravel8@gmail.com.</p>
+      </div>
+    </main>
+    <header class="sticky-nav" id="stickyNav" aria-label="Điều hướng nhanh">
+      <a class="sticky-logo" href="#trang-chu">Viettrip.</a>
+      <nav aria-label="Điều hướng các phần">
+        <a href="#gioi-thieu">Giới thiệu</a>
+        <a href="#diem-den">Điểm đến</a>
+        <a href="#hanh-trinh">Hành trình</a>
+        <a href="#ve-viettrip">Về Viettrip</a>
+        <a href="#lien-he">Liên hệ</a>
+      </nav>
+    </header>
+  </div>
+
+  <!-- MOBILE: bố cục riêng để không phải phóng nhỏ một bản thiết kế desktop 1024px. -->
+  <div class="mobile-site" id="mobileSite">
+    <header class="mobile-header" id="mobileHeader">
+      <a class="mobile-logo" href="#m-trang-chu">Viettrip.</a>
+      <button class="hamburger" id="hamburger" type="button" aria-label="Mở menu" aria-controls="mobileNav" aria-expanded="false"><span></span><span></span><span></span></button>
+      <nav class="mobile-nav" id="mobileNav" aria-label="Menu di động" inert>
+        <a href="#m-gioi-thieu">Giới thiệu</a>
+        <a href="#m-diem-den">Điểm đến</a>
+        <a href="#m-hanh-trinh">Hành trình</a>
+        <a href="#m-ve-viettrip">Về Viettrip</a>
+        <a href="#m-lien-he">Liên hệ</a>
+      </nav>
+    </header>
+    <main>
+      <section class="m-hero m-scene" id="m-trang-chu">
+        <div class="m-photo" style="background-image:url('assets/hero.webp')"></div>
+        <div class="m-hero-center">
+          <p class="m-eyebrow">Trải nghiệm văn hoá bản địa</p>
+          <h1>Vọng từ đại ngàn<br>Chạm vào tâm an</h1>
+        </div>
+        <div class="m-hero-foot">
+          <div class="m-hero-buttons"><a href="#m-hanh-trinh">Xem lịch trình ngay</a><button data-contact>Đăng ký tư vấn</button></div>
+          <p>Hành trình đưa người trẻ bước vào không gian âm vang đại ngàn, hòa mình vào di sản văn hóa phi vật thể của nhân loại.</p>
+        </div>
+      </section>
+      <section class="m-culture m-scene" id="m-gioi-thieu">
+        <div class="m-photo" style="background-image:url('assets/culture.webp')"></div>
+        <h2>Hành Trình Đánh Thức Mọi Giác Quan</h2>
+        <div class="m-culture-cards">
+          <article class="m-glass-card"><h3>KHÁM PHÁ CAO NGUYÊN</h3><p>Chuyến đi kết hợp tham quan cảnh quan cao nguyên hùng vĩ, tận hưởng không khí trong lành và chiêm ngưỡng thiên nhiên hoang sơ tuyệt đẹp.</p></article>
+          <article class="m-glass-card"><h3>TRẢI NGHIỆM ĐỜI SỐNG</h3><p>Tìm hiểu đời sống cộng đồng địa phương, kết nối sâu sắc với văn hóa bản địa dành riêng cho người trẻ yêu thích du lịch trải nghiệm.</p></article>
+          <article class="m-glass-card"><h3>ÂM THANH CỒNG CHIÊNG</h3><p>Trực tiếp trải nghiệm âm thanh cồng chiêng vang vọng trong không gian văn hóa Tây Nguyên truyền thống và linh thiêng.</p></article>
+        </div>
+      </section>
+      <section class="m-destination m-scene" id="m-diem-den">
+        <div class="m-photo" style="background-image:url('assets/destination.webp')"></div>
+        <div class="m-dest-intro"><em>Điểm đến trọng tâm</em><h2>BẢO LỘC - ĐÀ LẠT, LÂM ĐỒNG</h2><p>Hai thành phố cao nguyên với khí hậu tuyệt vời, nơi lưu giữ những giá trị văn hóa lâu đời kết hợp cùng khung cảnh thiên nhiên thơ mộng, mang đến trải nghiệm du lịch đáng nhớ nhất năm.</p></div>
+        <div class="m-dest-focus">BẢO LỘC - ĐÀ LẠT</div>
+      </section>
+      <section class="m-journey m-scene" id="m-hanh-trinh">
+        <div class="m-photo" style="background-image:url('assets/journey.webp')"></div>
+        <div class="m-journey-title"><p>Lộ trình chi tiết</p><h2>HÀNH TRÌNH TRẢI NGHIỆM</h2></div>
+        <div class="m-timeline">
+          <article class="m-timeline-item"><span>1</span><div><h3>Khởi Hành</h3><em>TP. Hồ Chí Minh → Bảo Lộc</em><p>Du khách khởi hành từ TP.HCM, di chuyển đến thành phố Bảo Lộc để khám phá cảnh quan thiên nhiên cao nguyên tươi đẹp và tìm hiểu văn hóa địa phương đặc trưng.</p></div></article>
+          <article class="m-timeline-item"><span>2</span><div><h3>Giao Lưu &amp; Tìm Hiểu Đà Lạt</h3><em>Giao Lưu Nghệ Nhân &amp; Ý Nghĩa Cồng Chiêng</em><p>Tiếp tục hành trình đến Đà Lạt với các hoạt động giao lưu trực tiếp cùng nghệ nhân bản địa, tìm hiểu sâu sắc về ý nghĩa của cồng chiêng trong đời sống cộng đồng.</p></div></article>
+          <article class="m-timeline-item"><span>3</span><div><h3>Đêm Trải Nghiệm</h3><em>Đêm Trải Nghiệm Cồng Chiêng &amp; Khám Phá</em><p>Tham gia đêm trải nghiệm cồng chiêng trong không gian được tổ chức phù hợp với phong tục địa phương. Lịch trình kết hợp tham quan các địa điểm thiên nhiên và văn hóa đặc sắc tại hai thành phố.</p></div></article>
+        </div>
+      </section>
+      <section class="m-about m-scene" id="m-ve-viettrip">
+        <div class="m-photo" style="background-image:url('assets/about.webp')"></div>
+        <div class="m-about-top"><p>Về Viettrip</p><h2>ĐỒNG HÀNH CÙNG NHỮNG CHUYẾN ĐI ĐÍCH THỰC</h2><div>Viettrip là doanh nghiệp hoạt động trong lĩnh vực du lịch và lữ hành, chuyên cung cấp các chương trình du lịch trong nước và quốc tế chất lượng cao. Khách hàng có thể liên hệ bộ phận tư vấn để tìm hiểu lịch khởi hành, giá tour, dịch vụ bao gồm, chính sách đăng ký và các lưu ý quan trọng trước chuyến đi.</div></div>
+        <button class="m-about-button" data-contact>LIÊN HỆ TƯ VẤN TOUR</button>
+      </section>
+      <footer class="m-contact m-scene" id="m-lien-he">
+        <div class="m-photo" style="background-image:url('assets/contact.webp')"></div>
+        <h2>Viettrip.</h2><p class="m-contact-description">Đơn vị lữ hành uy tín mang đến những trải nghiệm văn hóa bản địa độc đáo và sâu sắc cho du khách trẻ.</p>
+        <div class="m-contact-cards">
+          <div><h3>THỜI GIAN LÀM VIỆC</h3><p>◷ &nbsp; 9:00 - 19:00 (Thứ 2 - Thứ 7)</p></div>
+          <div><h3>TRỤ SỞ CHÍNH</h3><p>⌖ &nbsp; Số 68, Đường Lê Lai, P. Bến Thành, Thành phố HCM</p></div>
+          <div><h3>HỖ TRỢ KHÁCH HÀNG</h3><p>☎ &nbsp; CSKH: 9999 6666</p><a href="mailto:dulichviettravel8@gmail.com">✉ &nbsp; dulichviettravel8@gmail.com</a></div>
+        </div>
+      </footer>
+    </main>
+  </div>
+
+  <dialog class="contact-dialog" id="contactDialog" aria-labelledby="dialogTitle">
+    <form id="consultForm" class="consult-form">
+      <button type="button" class="dialog-exit" data-close aria-label="Đóng">×</button>
+      <p class="dialog-small">VIETTRIP · ĐẠI NGÀN</p>
+      <h2 id="dialogTitle">Bắt đầu hành trình của bạn.</h2>
+      <p>Điền thông tin để soạn email tư vấn gửi tới Viettrip. Website không tự lưu hay gửi dữ liệu lên máy chủ.</p>
+      <label>Họ và tên<input name="fullName" required autocomplete="name" placeholder="Tên của bạn" maxlength="80"></label>
+      <label>Số điện thoại<input name="phone" type="tel" autocomplete="tel" placeholder="Số điện thoại của bạn" maxlength="20"></label>
+      <label>Nội dung quan tâm<textarea name="message" placeholder="Lịch trình, giá tour, ngày khởi hành..." rows="3"></textarea></label>
+      <button class="consult-submit" type="submit">Soạn email tư vấn ↗</button>
+    </form>
+  </dialog>
+</body>
+</html>
